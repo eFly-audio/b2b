@@ -40,7 +40,7 @@ There's no signed Mac build yet, so you build it yourself. It's one command and 
 ```bash
 git clone https://github.com/eFly-audio/b2b.git
 cd b2b
-./build-mac.sh
+bash build-mac.sh
 ```
 
 The script installs Apple's Command Line Tools if needed, downloads the dependencies, builds everything and installs VST3 + AU into `~/Library/Audio/Plug-Ins/`. See [macOS permissions](#macos-permissions) below.
@@ -94,7 +94,7 @@ Everyone in the room must point at the same server.
 Dependencies (fetched automatically by `scripts/fetch-deps.sh` into `./deps`):
 JUCE 7.0.12, libdatachannel 0.24.6, Mbed TLS 3.6.4, Opus 1.5, libvpx 1.14.1.
 
-- **macOS:** `./build-mac.sh` (see above).
+- **macOS:** `bash build-mac.sh` (see above).
 - **Windows:** the released Windows binaries are cross-compiled from Linux with llvm-mingw. A native Windows build script (Visual Studio / MSVC) doesn't exist yet. The CMake project builds the plugin once the dependencies are installed into a prefix passed as `-DB2B_DEPS=<prefix>`. Contributions welcome.
 
 ```
