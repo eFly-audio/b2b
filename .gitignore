@@ -1,0 +1,16 @@
+# third-party sources (fetched by scripts/fetch-deps.sh) and build output
+deps/
+deps-install/
+deps-build/
+build/
+build-*/
+.tools/
+*.log
+
+# OS / IDE
+.DS_Store
+__MACOSX/
+Thumbs.db
+.vscode/
+.idea/
+*.user
